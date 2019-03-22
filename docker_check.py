@@ -179,7 +179,8 @@ def main():
         k: v
         for k, v
         in containers_stats.items()
-        if k.endswith('_mem_pct') or k.endswith('_cpu_pct')
+        #if k.endswith('_mem_pct') or k.endswith('_cpu_pct')
+	if k.endswith('_cpu_pct')
     }
     logging.debug("stats = %s", stats)
 
